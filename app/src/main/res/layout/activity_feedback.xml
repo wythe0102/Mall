@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/personal_bg_color_silver"
+    android:orientation="vertical">
+
+    <!-- 界面Title -->
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/title_normal" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.wythe.mall.view.PersonalItemTitle xmlns:title="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/feedback_type_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                title:personalTitle="@string/feedback_type"
+                title:personalMessageTextColor="@color/personal_color_title"/>
+
+            <View style="@style/line2" />
+
+
+            <View
+                style="@style/line2"
+                android:layout_marginTop="@dimen/personal_item_margin" />
+
+            <EditText
+                android:id="@+id/feedback_content"
+                android:layout_width="match_parent"
+                android:layout_height="98dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:textSize="@dimen/personal_feedback_edit_text"
+                android:hint="请输入产品意见，我们将不断优化体验"
+                android:maxLength="100"
+                android:padding="@dimen/personal_root_margin"
+                android:textColorHint="@color/personal_hint_color" />
+
+            <TextView
+                android:id="@+id/feedback_content_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="right|center"
+                android:textSize="@dimen/personal_feedback_edit_text"
+                android:paddingTop="6dp"
+                android:paddingBottom="@dimen/personal_root_margin"
+                android:paddingRight="@dimen/personal_root_margin"
+                android:textColor="@color/personal_color_gray" />
+
+            <View style="@style/line2" />
+
+            <View
+                style="@style/line2"
+                android:layout_marginTop="@dimen/personal_item_margin" />
+
+            <EditText
+                android:id="@+id/feedback_contact_content"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/white"
+                android:textSize="@dimen/personal_feedback_edit_text"
+                android:hint="请输入您的手机号/邮箱等(选填)"
+                android:padding="@dimen/personal_root_margin"
+                android:singleLine="true"
+                android:maxLength="50"
+                android:textColorHint="@color/personal_hint_color" />
+
+            <View style="@style/line2" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PersonalItemTitle">
+
+        <attr name="personalTitleIcon" format="reference" />
+        <attr name="personalTitle" format="reference" />
+        <attr name="personalMessage" format="reference" />
+        <attr name="personalNewIcon" format="reference" />
+        <attr name="personalArrowVisible" format="boolean" />
+        <attr name="personalMessageTextColor" format="reference" />
+        <attr name="personalTopLineVisible" format="boolean" />
+        <attr name="personalBottomVisible" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="PersonalBannerItem">
+        <attr name="banner_title" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PersonalOrderItem">
+
+        <attr name="order_icon" format="reference" />
+        <attr name="order_name" format="reference" />
+        <attr name="order_message" format="reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="PersonalPocketItem">
+
+        <attr name="pocket_name" format="reference" />
+        <attr name="pocket_value" format="reference" />
+
+    </declare-styleable>
+</resources>

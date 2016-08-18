@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="personal_text_size_14">14sp</dimen>
+    <dimen name="personal_text_size_11">11sp</dimen>
+
+    <dimen name="personal_info_text_size_l">17sp</dimen>
+    <dimen name="personal_info_text_size_m">13sp</dimen>
+    <dimen name="personal_info_text_size_mm">12sp</dimen>
+    <dimen name="personal_info_text_size_ms">11sp</dimen>
+    <dimen name="personal_info_text_size_s">10sp</dimen>
+
+    <dimen name="personal_title_text_size">15sp</dimen>
+    <dimen name="personal_more_text_size">13sp</dimen>
+    <dimen name="personal_item_text_size">12sp</dimen>
+    <dimen name="personal_order_notify_size">9sp</dimen>
+
+    <dimen name="personal_root_margin">10dp</dimen>
+    <dimen name="personal_item_margin">15dp</dimen>
+    <dimen name="personal_line_margin_left">38dp</dimen>
+
+    <dimen name="personal_feedback_edit_text">13sp</dimen>
+    
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_14">14dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+</resources>

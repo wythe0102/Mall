@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/base_ui_mall_dialog_style4_item_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/mall_common_dialog_style_4_item_check"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:background="@drawable/button_l"
+        android:layout_marginRight="@dimen/base_ui_mall_dialog_style4_item_checkbox_magin_right"
+        android:button="@null" />
+
+    <TextView
+        android:id="@+id/mall_common_dialog_style_4_item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/base_ui_mall_dialog_style4_item_textview_margin"
+        android:paddingBottom="@dimen/base_ui_mall_dialog_style4_item_textview_margin"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:textColor="@color/c_848689"
+        android:textSize="@dimen/base_ui_mall_dialog_style4_item_textview_size" />
+
+</LinearLayout>

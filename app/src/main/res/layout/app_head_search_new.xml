@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:focusable="true"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:background="@color/red">
+
+    <LinearLayout
+        android:id="@+id/home_search_button"
+        android:layout_width="54dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:layout_margin="7dp"/>
+    </LinearLayout>
+    <!-- 搜索框 -->
+    <include
+        android:id="@+id/home_title_search"
+        layout="@layout/include_search_box"
+        android:layout_width="0dp"
+        android:layout_weight="1.0"
+        android:layout_height="32dp"/>
+
+    <RelativeLayout
+        android:id="@+id/login_btn"
+        android:layout_width="54dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:clickable="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/home_login_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/login"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:layout_below="@id/home_login_img"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

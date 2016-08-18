@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 圆角 -->
+    <corners
+        android:bottomLeftRadius="3dp"
+        android:bottomRightRadius="3dp"
+        android:radius="3dp"
+        android:topLeftRadius="3dp"
+        android:topRightRadius="3dp" />
+ <!-- 设置圆角半径 -->
+
+
+    <!-- 填充 -->
+    <solid android:color="@color/c_FFFFFF" />
+
+    <stroke
+        android:width="1px"
+        android:color="@color/c_D7D7D7" />
+
+</shape>

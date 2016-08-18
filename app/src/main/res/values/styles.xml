@@ -1,0 +1,114 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="more_native_setting_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/fill_order_delivery_dark</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="more_native_setting_arrow_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:contentDescription">@string/none</item>
+        <item name="android:src">@drawable/button_k</item>
+    </style>
+
+    <style name="more_native_setting_layout_style">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">49dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/personal_view_pressed_selector</item>
+    </style>
+
+    <style name="score_native_setting_layout_style">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">59dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/personal_view_pressed_selector</item>
+    </style>
+
+
+    <style name="navigation_tab_bottom">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingRight">40dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+    <!-- 分割线-横向 -->
+    <style name="line1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#FFCCCCCC</item>
+    </style>
+
+    <style name="line2">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#FFCCCCCC</item>
+    </style>
+
+    <style name="line3">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">#FFCCCCCC</item>
+    </style>
+
+    <style name="line4">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#dcdcdc</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+
+    <style name="line6">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#e1e2e4</item>
+    </style>
+
+    <style name="Mall_Dialog_Common" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/mall_dialog_common_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Mall_Dialog_Upgrade" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_upgrade_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

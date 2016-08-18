@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/divider_color">
+    <!-- 界面Title -->
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/title_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:background="@color/pocket_yue"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="账户余额(元)"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8793.22"
+            android:textColor="@color/white"
+            android:textSize="60dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/divider_color"/>
+
+    <RelativeLayout
+        android:id="@+id/balance_chongzhi"
+        style="@style/more_native_setting_layout_style"
+        android:clickable="true"
+        >
+
+        <TextView
+            android:id="@+id/more_jd_about_title"
+            style="@style/more_native_setting_title_style"
+            android:text="@string/recharge"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/right_arrow"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

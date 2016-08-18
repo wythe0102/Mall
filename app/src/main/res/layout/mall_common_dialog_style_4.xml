@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/base_ui_mall_dialog_width"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/base_ui_mall_dialog_content_margin"
+    android:layout_marginRight="@dimen/base_ui_mall_dialog_content_margin"
+    android:paddingLeft="@dimen/base_ui_mall_dialog_content_padding"
+    android:paddingRight="@dimen/base_ui_mall_dialog_content_padding"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mall_dialog_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_ui_mall_dialog4_textview_margin_bottom"
+            android:layout_marginTop="@dimen/base_ui_mall_dialog_textview_margin_top"
+            android:gravity="center"
+            android:textColor="@color/c_686868"
+            android:textSize="@dimen/base_ui_mall_dialog_textview_size" />
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/mall_dialog_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:alwaysDrawnWithCache="false"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:divider="@drawable/mall_dialog_common_divider"
+        android:dividerHeight="2px"
+        android:fadeScrollbars="true"
+        android:persistentDrawingCache="none"
+        android:scrollingCache="false" >
+    </ListView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/mall_dialog_common_divider"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/base_ui_mall_dialog_button_content_height"
+        android:layout_marginBottom="@dimen/base_ui_mall_dialog_button_margin_bottom"
+        android:layout_marginTop="@dimen/base_ui_mall_dialog_button_margin_top"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/mall_dialog_pos_button"
+            android:layout_width="@dimen/base_ui_mall_dialog_button_child_width"
+            android:layout_height="@dimen/base_ui_mall_dialog_button_child_height"
+            android:layout_marginRight="@dimen/base_ui_mall_dialog_button_child_margin"
+            android:layout_weight="1"
+            android:background="@drawable/button_d"
+            android:textColor="@color/c_686868"
+            android:textSize="@dimen/base_ui_mall_dialog_button_text_size" />
+
+        <Button
+            android:id="@+id/mall_dialog_neg_button"
+            android:layout_width="@dimen/base_ui_mall_dialog_button_child_width"
+            android:layout_height="@dimen/base_ui_mall_dialog_button_child_height"
+            android:layout_marginLeft="@dimen/base_ui_mall_dialog_button_child_margin"
+            android:layout_weight="1"
+            android:background="@drawable/button_a"
+            android:textColor="@color/button_a_font_color"
+            android:textSize="@dimen/base_ui_mall_dialog_button_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

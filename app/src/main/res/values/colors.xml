@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--搜索框字体颜色-->
+    <color name="search_title_text_color">#474646</color>
+    <!--我的关注-->
+    <color name="home_my_like">#FDAB31</color>
+    <!--分类-->
+    <color name="home_category">#F65D58</color>
+    <!--易配-->
+    <color name="home_my_yipei">#4CA4FE</color>
+    <!--查看物流-->
+    <color name="home_wuliu">#AD77CD</color>
+    <!--领券中心-->
+    <color name="home_ticket">#FEC736</color>
+    <!--易配论坛-->
+    <color name="home_bbs">#6E68E6</color>
+    <!--积分兑换-->
+    <color name="home_score">#32D197</color>
+    <!--开票中心-->
+    <color name="home_invoice">#FA592D</color>
+    <!--一级分类背景颜色-->
+    <color name="category_firstlevel_bg_color">#f3f4f6</color>
+    <!--分类背景颜色-->
+    <color name="category_bg_color">#ffffff</color>
+    <!--分类分割线-->
+    <color name="category_new_divider_color">#e5e5e5</color>
+    <!--搜索框提示文字颜色-->
+    <color name="search_title_hint_text_color">#b6b6b6</color>
+    <color name="pocket_yue">#4AA1A8</color>
+    <color name="pocket_yirongdai">#6F6F6F</color>
+    <color name="pocket_jifen">#FFAE45</color>
+    <color name="pocket_hongbao">#EA5575</color>
+    <color name="pocket_ticket">#4268AF</color>
+    <color name="fill_order_delivery_dark">#252525</color>
+    <color name="divider_color">#F4F6F5</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="goldyellow">#ff9428</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#FFCCCCCC</color>
+    <color name="black">#FF000000</color>
+    <color name="divider_color2">#B2B3B5</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="dark_red">#DB2929</color>
+    <color name="product_odd_row">#FFFFFFFF</color>
+    <color name="product_even_row">#FFFFFFFF</color>
+    <color name="light_gray">#FFE6E6E6</color>
+    <color name="orange_line">#FFF2DAAC</color>
+    <color name="all_bg">#FFF6F2ED</color>
+    <color name="promotion_message_layout_listview_background_color">#FF41413F</color>
+    <color name="search_empty">#FF6e6f6f</color>
+    <color name="recommend_tab_item">#999999</color>
+    <color name="recommend_selected_tab_item">#f15353</color>
+    <color name="c_92B7F1">#92B7F1</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_color_686868">#686868</color>
+    <color name="text_color_252525">#252525</color>
+    <color name="regist_msgCode_hint">#999999</color>
+    <color name="regist_tip">#686868</color>
+    <color name="regist_getCode">#f15353</color>
+    <color name="regist_btn">#ffffff</color>
+    <color name="regist_btn0">#bdbdbd</color>
+    <color name="regist_bg">#f8f8f8</color>
+    <color name="regist_tip2">#848689</color>
+    <color name="regist_input">#252525</color>
+    <color name="c_252525">#252525</color>
+    <color name="c_686868">#686868</color>
+    <color name="c_6A77B6">#6A77B6</color>
+    <color name="c_707275">#707275</color>
+    <color name="c_7D7D7">#D7D7D7</color>
+    <color name="c_848689">#848689</color>
+    <color name="c_96000000">#96000000</color>
+    <color name="c_999999">#999999</color>
+    <color name="c_ADADAD">#ADADAD</color>
+    <color name="c_BDBDBD">#BDBDBD</color>
+    <color name="c_BFBFBF">#BFBFBF</color>
+    <color name="c_C7C7C7">#C7C7C7</color>
+    <color name="c_D7D7D7">#D7D7D7</color>
+    <color name="c_DCDCDC">#DCDCDC</color>
+    <color name="c_E0E0E0">#E0E0E0</color>
+    <color name="c_E1E1E1">#E1E1E1</color>
+    <color name="c_E9321F">#E9321F</color>
+    <color name="c_EDEDED">#EDEDED</color>
+    <color name="c_F15353">#F15353</color>
+    <color name="c_F3F5F7">#F3F5F7</color>
+    <color name="c_F44764">#F44764</color>
+    <color name="c_F8F8F8">#F8F8F8</color>
+    <color name="c_FFFFFF">#FFFFFF</color>
+    <color name="font_ba_01">#252525</color>
+    <color name="font_ba_02">#686868</color>
+    <color name="font_ba_03">#F15353</color>
+    <color name="font_ba_04">#FFFFFF</color>
+    <color name="font_ba_05">#BFBFBF</color>
+    <color name="font_ba_06">#848689</color>
+    <!-- 系统默认有的按钮或者背景颜色或图片可以使用这个来去掉 -->
+    <drawable name="none">#00000000</drawable>
+    <!-- 登录 -->
+    <color name="login_devider_bg">#dedede</color>
+    <color name="login_bottom_devider_bg">#e9e9e9</color>
+    <color name="login_name_text_color">#686868</color>
+    <color name="login_name_edit_color">#252525</color>
+    <color name="login_layout_bg">#f3f4f6</color>
+    <color name="login_confirm_btn_disable_text_color">#adadad</color>
+    <color name="login_edit_hint_text_color">#cccaca</color>
+    <!--红包-->
+    <color name="item_color">#fee845</color>
+    <color name="item_color2">#e7e8df</color>
+    <!--优惠券-->
+    <color name="ticket_item_color">#e60012</color>
+    <color name="ticket_item_color2">#c0c2c1</color>
+    <!--商品列表标签颜色v3.8-->
+    <color name="product_list_tab_color_v38">#9a9a9a</color>
+    <color name="product_list_tab_select_color_v38">#f24b48</color>
+    <!--商品列表页背景颜色-->
+    <color name="product_list_bg">#f3f4f6</color>
+    <!--商品列表页tab分割线-->
+    <color name="product_list_tabs_divider">#e9e9e9</color>
+    <!--商品列表页列表模式图片背景框颜色-->
+    <color name="product_list_item_bg_v38_boder_color">#e7e7e7</color>
+    <!--商品列表列表模式devider颜色-->
+    <color name="product_list_item_divider_color">#dedede</color>
+    <!--商品列表页tab的selector的颜色v3.8-->
+    <color name="product_list_tab_underline_selector_color_v38">#f24b48</color>
+</resources>

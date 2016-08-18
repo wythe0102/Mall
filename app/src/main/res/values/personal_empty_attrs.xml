@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- personal_empty -->
+    <declare-styleable name="personal_empty">
+        <!--  图片 -->
+        <attr name="empty_icon" format="reference"/>
+
+        <!--  文字 message -->
+        <attr name="empty_message" format="reference"/>
+        <attr name="empty_message_text_size" format="dimension"/>
+        <attr name="empty_message_text_color" format="color"/>
+
+        <!--  文字 subMessage -->
+        <attr name="empty_submessage" format="reference"/>
+        <attr name="empty_submessage_text_size" format="dimension"/>
+        <attr name="empty_submessage_text_color" format="color"/>
+
+    </declare-styleable>
+
+</resources>

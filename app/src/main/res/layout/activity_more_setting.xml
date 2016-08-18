@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regist_bg">
+
+    <!-- 界面Title -->
+
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/title_normal" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/common_title" >
+
+            <LinearLayout
+                android:id="@+id/get_find_password_number_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/message_setting"
+                    style="@style/more_native_setting_layout_style"
+                    android:clickable="true"
+                    >
+
+                    <TextView
+                        style="@style/more_native_setting_title_style"
+                        android:text="@string/message_setting"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/right_arrow"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color"/>
+
+                <RelativeLayout
+                    android:id="@+id/clear_local_cache"
+                    style="@style/more_native_setting_layout_style"
+                    android:clickable="true"
+                    >
+
+                    <TextView
+                        style="@style/more_native_setting_title_style"
+                        android:text="@string/clear_local_cache"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/divider_color"/>
+
+                <RelativeLayout
+                    android:id="@+id/menu_about"
+                    style="@style/more_native_setting_layout_style"
+                    android:clickable="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/more_jd_about_title"
+                        style="@style/more_native_setting_title_style"
+                        android:text="@string/about"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/right_arrow"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/logout_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="25dip"
+                    android:layout_marginLeft="25dip"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_b"
+                    android:text="@string/logout"
+                    android:gravity="center"
+                    android:textColor="@color/regist_btn0"
+                    android:textSize="16sp"
+                    android:layout_below="@id/find_password_number_editText_rl">
+                </Button>
+
+            </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

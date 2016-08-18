@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    package="com.wythe.mall">
+    <!--<uses-sdk android:minSdkVersion="9" android:targetSdkVersion="21" tools:overrideLibrary="me.nereo.multi_image_selector"/>-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity"/>
+        <activity android:name=".activity.RegisterActivity"/>
+        <activity android:name=".activity.RegisterMessageCodeActivity"/>
+        <activity android:name=".activity.RegisterDetailActivity"/>
+        <activity android:name=".activity.RegisterCompleteActivity"/>
+        <activity android:name=".activity.FindPasswordActivity"/>
+        <activity android:name=".activity.FindPasswordMessageCodeActivity"/>
+        <activity android:name=".activity.FindPasswordModifyPasswordActivity"/>
+        <activity android:name=".activity.MoreSettingActivity"/>
+        <activity android:name=".activity.MessageCenterActivity"/>
+        <activity android:name=".activity.ServiceFeedbackActivity"/>
+        <activity android:name=".activity.FeedBackActivity"/>
+        <activity android:name=".activity.PocketActivity"/>
+        <activity android:name=".activity.BalanceActivity"/>
+        <activity android:name=".activity.RechargeActivity"/>
+        <activity android:name=".activity.YiRongDaiActivity"/>
+        <activity android:name=".activity.ScoreActivity"/>
+        <activity android:name=".activity.RedPacketActivity"/>
+        <activity android:name=".activity.TicketActivity"/>
+        <activity android:name=".activity.ExpressActivity"/>
+        <activity android:name=".activity.ProductActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.ProductDetailActivity"/>
+        <!--Image Selector Entry-->
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

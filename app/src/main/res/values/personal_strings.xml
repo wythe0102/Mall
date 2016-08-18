@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation"
+    >
+
+    <string name="personal_order">我的订单</string>
+    <string name="personal_pocket">我的钱包</string>
+    <string name="personal_service">我的服务</string>
+    <string name="personal_privilege">我的特权</string>
+    <string name="personal_feedback">意见反馈</string>
+    <string name="personal_help_and_feedback">帮助与反馈</string>
+    <string name="personal_recommend">为你推荐</string>
+    <string name="personal_baicaijia">白菜价</string>
+
+    <string name="personal_order_msg">查看全部订单</string>
+    <string name="personal_pocket_msg">查看全部资产</string>
+    <string name="personal_service_msg">京东服务</string>
+    <string name="personal_privilege_msg">会员俱乐部</string>
+
+    <string name="personal_view_all_order">查看全部订单</string>
+
+    <string name="personal_order_wait_for_pay">待付款</string>
+    <string name="personal_order_wait_sing_in">待收货</string>
+    <string name="personal_order_wait_comment">待评价</string>
+    <string name="personal_order_after_sale">返修/退换</string>
+
+
+    <string name="personal_pocket_balance">账户余额</string>
+    <string name="personal_pocket_coupons">优惠券</string>
+    <string name="personal_pocket_yirongdai">易融贷</string>
+    <string name="personal_pocket_score">积分</string>
+    <string name="personal_pocket_default_value">0</string>
+    <string name="personal_pocket_bank_card">快捷支付（管理银行卡）</string>
+
+    <string name="personal_wish_shop_title">关注的店铺</string>
+    <string name="personal_wish_product_title">关注的商品</string>
+    <string name="personal_browsing_history_title">浏览记录</string>
+
+    <string name="feedback_type">反馈类型</string>
+    <string name="feedback_submit">提交</string>
+    <string name="feedback">意见反馈</string>
+
+    <string name="personal_about_check_update">检查更新</string>
+    <string name="personal_about_help">使用帮助</string>
+
+    <string name="share_dna_normal_text">%1$s 点击查看：%2$s | 下载京东APP查看我的基因：http://3.cn/Ceo4yH @京东</string>
+    <string name="share_evaluate_detail_text">%1$s 点击查看：%2$s | 下载京东APP查看晒单详情：http://3.cn/Ceo4yH @京东</string>
+    
+    <string name="i_want_to_feedback">我要反馈</string>
+    <string name="i_want_to_feedback_error">抱歉，暂时不能使用此功能</string>
+
+    <string name="my_dna_scroll_more">上滑查看更多惊喜</string>
+    <string name="my_dna_title">我的购物基因</string>
+
+    <string name="mystareet_promotion">促销</string>
+    <string name="mystareet_new_ware">上新</string>
+    <string name="mystareet_coupon">券</string>
+    <string name="mystareet_care_goods_promotion">关注内更多促销</string>
+    <string name="mystareet_shoppingcart_promotion">购物车内更多促销</string>
+
+</resources>

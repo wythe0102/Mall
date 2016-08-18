@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/mall_common_dialog_style_8_item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c_686868"
+        android:textSize="@dimen/base_ui_mall_dialog_style8_item_textview_size" />
+
+    <TextView
+        android:id="@+id/mall_common_dialog_style_8_item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c_848689"
+        android:textSize="@dimen/base_ui_mall_dialog_style8_item_second_textview_size"
+        android:layout_marginTop="@dimen/base_ui_mall_dialog_style8_item_second_textview_margin_top"
+        android:layout_marginBottom="@dimen/base_ui_mall_dialog_style8_item_second_textview_margin_bottom"/>
+
+</LinearLayout>

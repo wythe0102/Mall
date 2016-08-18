@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/base_ui_mall_dialog_style7_width"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/base_ui_mall_dialog_content_margin"
+    android:layout_marginRight="@dimen/base_ui_mall_dialog_content_margin"
+    android:paddingLeft="@dimen/base_ui_mall_dialog_content_padding"
+    android:paddingRight="@dimen/base_ui_mall_dialog_content_padding"
+    android:orientation="vertical"  >
+
+    <TextView
+        android:id="@+id/mall_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_ui_mall_dialog_style7_title_margin_top"
+        android:gravity="center"
+        android:textColor="@color/c_686868"
+        android:textSize="@dimen/base_ui_mall_dialog_style7_title_size" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+        <TextView
+            android:id="@+id/mall_dialog_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_ui_mall_dialog_style7_textview_margin_top"
+            android:textColor="@color/c_848689"
+            android:lineSpacingExtra="@dimen/base_ui_mall_dialog_style7_lineSpacingExtra"
+            android:textSize="@dimen/base_ui_mall_dialog_style7_textview_size" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/mall_dialog_input_edit"
+        android:layout_width="@dimen/base_ui_mall_dialog_style7_edit_weight"
+        android:layout_height="@dimen/base_ui_mall_dialog_style7_edit_height"
+        android:layout_marginTop="@dimen/base_ui_mall_dialog_style7_edit_margint_top"
+        android:paddingLeft="@dimen/base_ui_mall_dialog_style7_edit_padding"
+        android:paddingRight="@dimen/base_ui_mall_dialog_style7_edit_padding"
+        android:background="@drawable/mall_dialog_edit_bg"
+        android:textColorHint="@color/c_D7D7D7"
+        android:textSize="@dimen/base_ui_mall_dialog_style7_edit_text_size"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:includeFontPadding="true"
+        android:inputType="textPassword"
+        android:isScrollContainer="true" >
+       </EditText>
+
+
+        <LinearLayout
+            android:id="@+id/mall_dialog_tip_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_ui_mall_dialog_style7_tip_margint_top"
+            android:layout_gravity="right"
+            android:gravity="center_vertical">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/tipImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/questionmark_icon"
+               />
+            <TextView
+                android:id="@+id/mall_dialog_tip_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_848689"
+                android:layout_marginLeft="6dp"
+                android:textSize="@dimen/base_ui_mall_dialog_style7_tip_textview_size"
+               />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/base_ui_mall_dialog_button_content_height"
+            android:layout_marginTop="@dimen/base_ui_mall_dialog_style7_button_margint_top"
+            android:layout_marginBottom="@dimen/base_ui_mall_dialog_style7_button_margint_bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/mall_dialog_pos_button"
+                android:layout_width="@dimen/base_ui_mall_dialog_button_child_width"
+                android:layout_height="@dimen/base_ui_mall_dialog_button_child_height"
+                android:layout_marginRight="@dimen/base_ui_mall_dialog_button_child_margin"
+                android:layout_weight="1"
+                android:background="@drawable/button_d"
+                android:textColor="@color/c_686868"
+                android:textSize="@dimen/base_ui_mall_dialog_button_text_size" />
+
+            <Button
+                android:id="@+id/mall_dialog_neg_button"
+                android:layout_width="@dimen/base_ui_mall_dialog_button_child_width"
+                android:layout_height="@dimen/base_ui_mall_dialog_button_child_height"
+                android:layout_marginLeft="@dimen/base_ui_mall_dialog_button_child_margin"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_style7_button_bg"
+                android:textColor="@color/c_BFBFBF"
+                android:textSize="@dimen/base_ui_mall_dialog_button_text_size" />
+        </LinearLayout>
+
+    </LinearLayout>

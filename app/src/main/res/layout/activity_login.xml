@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/login_title"
+        layout="@layout/title_normal" />
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_editor_layout_margin_top"
+        android:background="@color/white"
+        android:paddingLeft="13dp">
+
+
+        <RelativeLayout
+            android:id="@+id/login_page_input_name_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/login_editor_layout_edit_height"
+            android:layout_alignParentTop="true">
+
+            <!-- 用户名 -->
+
+            <TextView
+                android:id="@+id/login_page_input_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/user_name"
+                android:textColor="@color/login_name_text_color"
+                android:textSize="@dimen/login_editor_layout_edit_text_size"/>
+
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/login_page_input_name"
+                android:background="@color/transparent"
+                android:hint="@string/login_username_hint"
+                android:singleLine="true"
+                android:textColor="@color/login_name_edit_color"
+                android:textColorHint="@color/login_edit_hint_text_color"
+                android:textSize="@dimen/login_editor_layout_edit_text_size"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/login_divider_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/login_page_input_name_layout"
+            android:layout_marginLeft="@dimen/login_divider_line_margin_left"
+            android:background="@color/login_devider_bg"/>
+
+        <RelativeLayout
+            android:id="@+id/login_page_input_password_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/login_editor_layout_edit_height"
+            android:layout_below="@id/login_divider_line"
+            >
+
+            <!-- 密码 -->
+
+            <TextView
+                android:id="@+id/login_page_input_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/user_password"
+                android:textColor="@color/login_name_text_color"
+                android:textSize="@dimen/login_editor_layout_edit_text_size"/>
+
+            <CheckBox
+                android:id="@+id/login_switchBtn"
+                android:layout_width="@dimen/login_switchBtn_width"
+                android:layout_height="@dimen/login_switchBtn_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/login_hide_password_selector"
+                android:button="@null"
+                android:clickable="true"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/login_password_delete"
+                android:layout_width="@dimen/login_password_delete_width"
+                android:layout_height="@dimen/login_password_delete_width"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/login_switchBtn"
+                android:src="@drawable/login_delete_data_icon"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/login_password_delete"
+                android:layout_toRightOf="@id/login_page_input_password"
+                android:background="@color/transparent"
+                android:hint="@string/login_pd_hint"
+                android:inputType="textPassword"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:textColor="@color/login_name_edit_color"
+                android:textColorHint="@color/login_edit_hint_text_color"
+                android:textSize="@dimen/login_editor_layout_edit_text_size"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/login_divider_verification_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/login_page_input_password_layout"
+            android:layout_marginLeft="@dimen/login_divider_line_margin_left"
+            android:background="@color/login_devider_bg"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/login_input_verification_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/login_editor_layout_edit_height"
+            android:layout_below="@id/login_divider_verification_line"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/login_input_verification_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/verification_code"
+                android:textColor="@color/login_name_text_color"
+                android:textSize="@dimen/login_editor_layout_edit_text_size"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/login_input_verify_image"
+                android:layout_width="@dimen/login_input_verify_image_width"
+                android:layout_height="@dimen/login_input_verify_image_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/none"/>
+
+            <EditText
+                android:id="@+id/login_input_verify_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/login_input_verify_image"
+                android:layout_toRightOf="@id/login_input_verification_text"
+                android:background="@color/transparent"
+                android:hint="@string/login_ver_hint"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/login_name_edit_color"
+                android:textColorHint="@color/login_edit_hint_text_color"
+                android:textSize="@dimen/login_editor_layout_edit_text_size"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_comfirm_button"
+        android:layout_below="@+id/login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_comfirm_button_height"
+        android:layout_marginLeft="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginRight="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginTop="@dimen/login_comfirm_button_margin_top"
+        android:background="@drawable/button_b_login"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_comfirm_button_text_size"/>
+
+    <RelativeLayout
+        android:id="@+id/login_page_find_and_uion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_comfirm_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/login_comfirm_button_margin_top"
+        android:gravity="center_vertical">
+
+        <!-- 手机快速注册 -->
+
+        <TextView
+            android:id="@+id/register_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/quick_register"
+            android:textColor="#686868"
+            android:textSize="@dimen/register_link_text_size"/>
+        <!-- 找回密码 -->
+
+        <TextView
+            android:id="@+id/login_page_find_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/find_password"
+            android:textColor="#686868"
+            android:textSize="@dimen/register_link_text_size"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

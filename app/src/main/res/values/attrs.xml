@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="IMvpiLinePageIndicatorStyle" format="reference" />
+    <attr name="centered" format="boolean" />
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="unselectedColor" format="color" />
+    <attr name="lineWidth" format="dimension" />
+    <attr name="gapWidth" format="dimension" />
+    <declare-styleable name="Indicator">
+        <attr name="indicatorColor" format="color|reference"/>
+    </declare-styleable>
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_radius" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_background" format="color|integer"/>
+        <attr name="ci_selected_background" format="color|integer"/>
+        <attr name="ci_gravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="ci_mode">
+            <enum name="inside" value="0"/>
+            <enum name="outside" value="1"/>
+            <enum name="solo" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

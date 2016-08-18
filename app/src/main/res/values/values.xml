@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="button_a_01_solid">#F15353</drawable>
+    <drawable name="button_a_02_solid">#A83A3A</drawable>
+    <drawable name="button_a_03_solid">#F0F0F0</drawable>
+    <drawable name="button_b_01_solid">#F15353</drawable>
+    <drawable name="button_b_02_solid">#A83A3A</drawable>
+    <drawable name="button_b_03_solid">#F0F0F0</drawable>
+    <drawable name="button_b_04_solid">#e1e1e3</drawable>
+    <drawable name="button_c_01_solid">#FFFFFF</drawable>
+    <drawable name="button_c_01_stroke">#686868</drawable>
+    <drawable name="button_c_02_solid">#D9D9D9</drawable>
+    <drawable name="button_c_02_stroke">#595959</drawable>
+    <drawable name="button_d_01_solid">#FFFFFF</drawable>
+    <drawable name="button_d_01_stroke">#B7B7B7</drawable>
+    <drawable name="button_d_02_solid">#D9D9D9</drawable>
+    <drawable name="button_d_02_stroke">#9C9C9C</drawable>
+    <drawable name="button_f_01_solid">#FFFFFF</drawable>
+    <drawable name="button_f_01_stroke">#D7D7D7</drawable>
+    <drawable name="button_f_02_solid">#D9D9D9</drawable>
+    <drawable name="button_f_02_stroke">#B7B7B7</drawable>
+    <drawable name="button_g_01_solid">#FFFFFF</drawable>
+    <drawable name="button_g_01_stroke">#F15353</drawable>
+    <drawable name="button_g_02_solid">#D9D9D9</drawable>
+    <drawable name="button_g_02_stroke">#CD4747</drawable>
+    <drawable name="button_p_01_solid">#FFFFFF</drawable>
+    <drawable name="button_p_02_solid">#848689</drawable>
+    <drawable name="button_p_stroke">#E0E0E0</drawable>
+    <drawable name="button_r_01_stroke">#BFBFBF</drawable>
+    <drawable name="button_r_02_stroke">#F15353</drawable>
+    <drawable name="button_r_solid">#FFFFFF</drawable>
+    <declare-styleable name="LinePageIndicator">
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered" />
+        <!-- Color of the unselected lines that represent the pages. -->
+        <attr name="unselectedColor" />
+        <!-- Color of the selected line that represents the current page. -->
+        <attr name="selectedColor" />
+        <!-- Width of each indicator line. -->
+        <attr name="lineWidth" />
+        <!-- Width of each indicator line's stroke. -->
+        <attr name="strokeWidth" />
+        <!-- Width of the gap between each indicator line. -->
+        <attr name="gapWidth"/>
+        <!-- View background -->
+        <attr name="android:background"/>
+    </declare-styleable>
+    <declare-styleable name="MallCircleImageView">
+        <attr format="dimension" name="borderWidth"/>
+        <attr format="color" name="borderColor"/>
+    </declare-styleable>
+</resources>

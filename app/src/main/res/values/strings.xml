@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mall</string>
+    <string name="action_settings">设置</string>
+    <string name="more_settings">更多设置</string>
+    <string name="service_feedback">服务/反馈</string>
+    <string name="about">关于</string>
+    <string name="message_setting">推送消息设置</string>
+    <string name="message_center">消息中心</string>
+    <string name="express_message">物流通知</string>
+    <string name="clear_local_cache">清楚本地缓存</string>
+    <string name="home_my_like">我的关注</string>
+    <string name="home_category">分类</string>
+    <string name="home_my_yipei">我的易配</string>
+    <string name="home_wuliu">查看物流</string>
+    <string name="home_ticket">领券中心</string>
+    <string name="home_bbs">易配论坛</string>
+    <string name="home_score">积分兑换</string>
+    <string name="score">积分</string>
+    <string name="score_detail">积分明细</string>
+    <string name="home_invoice">开票中心</string>
+    <string name="more">更多</string>
+    <string name="approval_tip">审核提示</string>
+    <string name="home_enter_miaosha">进入秒杀专场</string>
+    <string name="none"></string>
+    <string name="personal_personal">我的易配</string>
+    <string name="account_manager">账户管理</string>
+    <string name="account_name">昵称：</string>
+    <string name="message_code2">验证码已发送至：</string>
+    <string name="message_code3">的手机上</string>
+    <string name="recharge">充值</string>
+    <string name="more_information">了解详情</string>
+    <string name="add_amount">提升额度</string>
+    <string name="recharge_amount">充值金额</string>
+    <string name="recharge_tip">请输入充值金额</string>
+    <string name="recharge_confirm">确认充值</string>
+    <string name="homeActivity_autoComplete">车型/产品型号/零件名称</string>
+    <string name="yipei_car_manager">易配车管家</string>
+    <string name="all">全部</string>
+    <!--  购物车 -->
+    <string name="cart">购物车</string>
+    <string name="cartinfo_no">您的购物车是空的，快去选购吧！</string>
+    <string name="cartinfo_synchronous">购物车同步中</string>
+    <string name="cart_logininfo">您可以在登录后系统后同步电脑与手机购物 \n车中的商品</string>
+    <string name="cart_market">促销大卖场</string>
+    <!--注册-->
+    <string name="regist_get_msgCode">获取验证码</string>
+    <string name="regist_next">下一步</string>
+    <string name="confirm">确定</string>
+    <string name="regist_finish">完成</string>
+    <string name="regist_cancel"></string>
+    <string name="regist_pleaseSetPassword">可以打开明文开关检查密码</string>
+
+    <string name="regist_inputMessageCode">请输入短信验证码</string>
+    <string name="find_password_inputMessageCode">请输入短信验证码</string>
+    <string name="regist_setpwd">请设置登录密码</string>
+    <string name="input_must">(必填)</string>
+    <string name="show_jdagreement">易配用户注册协议</string>
+    <string name="regist_inputPhone">请输入手机号</string>
+    <string name="find_password_hint">请输入用户名/邮箱/已验证手机</string>
+    <string name="regist_inputImageCode">请输入图片验证码</string>
+    <string name="regist_inputImageError">图片验证码格式错误</string>
+    <string name="regist_accept_agreement">同意</string>
+
+    <string name="regist_unbind">解绑手机</string>
+    <string name="regist_inputPhotoNum">请输入手机号码</string>
+    <string name="click_upload">点击上传</string>
+    <string name="phone_number">请输入手机号码</string>
+    <string name="email">邮箱</string>
+    <string name="qq">QQ</string>
+    <string name="wechat">微信</string>
+    <string name="interet_product">您感兴趣的车型或产品</string>
+    <string name="company_name">公司名称</string>
+    <string name="company_location">公司所在地</string>
+    <string name="company_address">公司地址</string>
+    <string name="company_type">企业性质</string>
+    <string name="company_certificate_photo">请上传营业执照照片</string>
+    <string name="company_home_photo">请上门头照片</string>
+    <string name="regist_phoneNumError">手机号格式错误</string>
+    <string name="regist_freshImageCode">请刷新图片验证码后输入左边文本框</string>
+    <string name="regist_sendTo">我们将发送短信验证码至：</string>
+    <string name="regist_pleasedInput">请输入</string>
+    <string name="contact_name">联系人姓名</string>
+    <string name="contact_position">联系人职位</string>
+    <string name="contact_phone">联系人电话</string>
+    <string name="regist_messageCode">收到的短信验证码:</string>
+    <string name="regist_messageCodeError">短信验证码格式错误</string>
+<string name="regist_unbindMsg_confirm">1、确认注册将解除%1$s与原账号的绑定，并注册一个与原来账号无关的新账号；\n
+2、原账号不能再使用该手机号登录，可能造成订单、资产无法查看及使用，若忘记用户名请联系易配客服；\n3、若原账号为您本人所有，建议直接登录或找回密码；</string>
+    <string name="regist_unbindTitle">确认解绑并注册</string>
+    <string name="regist_unbindMsg">该手机号已被使用，继续注册将会与原账号解绑。如果您希望使用原账号，请返回登录页直接登录。是否继续注册？</string>
+    <string name="back_tip">点击“返回”将中断注册，确定返回？</string>
+    <string name="regist_lianxi"><u>联系客服</u></string>
+    <string name="pwd_error">您的密码格式有误。请将密码位数设置为6&#8211;20位，建议不要使用过于简单的密码。</string>
+    <string name="pwd_formatError">您的密码格式有误。请将密码设置为6&#8211;20位，可使用数字、字母、字符的组合，请不要输入空格、回车等非法字符。</string>
+    <string name="setPwd_hint">请设置为6&#8211;20位字符</string>
+
+    <string name="regist_setPasswordTip">密码由6-20位字符组成，包含至少两种以上字母、数字，或者半角字符，区分大小写</string>
+    <string name="reset_password_tip">6-20位,不能与原密码相同</string>
+    <string name="regist_username_tip">由数字、字母或下划线组成，长度6到16位</string>
+    <string name="registTip">注册成功</string>
+    <string name="unbinfTip">解绑注册成功</string>
+    <!--登录-->
+    <string name="user_name">账号：</string>
+    <string name="username">用户名</string>
+    <string name="history_receiver">请填写历史收货人姓名</string>
+    <string name="history_order_receiver">历史已完成订单中的收货人</string>
+    <string name="verification_code">验证码：</string>
+    <string name="verification_code2">验证码</string>
+    <string name="user_password">密码：</string>
+    <string name="user_password_tip">请设置登录密码</string>
+    <string name="user_password_new_tip">请设置新的登录密码</string>
+    <string name="user_password_confirm_tip">请再次输入登录密码</string>
+    <string name="login_failed_title">登录失败</string>
+    <string name="login_failed_message">登录失败：用户名或密码错误</string>
+    <string name="login_user_name_error_hint">请输入用户名</string>
+    <string name="login_user_password_hint">请输入密码</string>
+    <string name="login_ver_hint">请输入验证码</string>
+    <string name="quick_register">手机快速注册</string>
+    <string name="find_password">找回密码</string>
+    <string name="login_username_hint">用户名/邮箱/手机号</string>
+    <string name="login_pd_hint">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="login_yipei">易配登录</string>
+    <string name="logout">退出登录</string>
+    <!--底部菜单-->
+    <string name="navigation_home">首页</string>
+    <string name="navigation_category">分类</string>
+    <string name="navigation_share">分享</string>
+    <string name="navigation_cart">购物车</string>
+    <string name="navigation_personal">我的</string>
+
+    <string-array name="pg_new_feedback_contact_type">
+        <item>功能意见</item>
+        <item>界面意见</item>
+        <item>您的新需求</item>
+    </string-array>
+
+    <!-- 意见反馈 -->
+    <string name="pg_new_feedback_type">请选择反馈类型：</string>
+    <string name="pg_new_feedback_type_text_hint">请选择</string>
+    <string name="pg_new_feedback_error">反馈意见不能为空，请输入</string>
+    <string name="pg_new_feedback_type_error">反馈类型不能为空，请选择</string>
+    <string name="pg_new_feedback_submit_faill">提交失败，请重试</string>
+    <string name="pg_new_feedback_content">反馈内容：</string>
+    <string name="pg_new_feedback_contact">联系方式：</string>
+    <string name="pg_new_feedback_contact_hint">您的姓名、手机号、邮箱等</string>
+    <string name="pg_new_feedback_qq_content">问题反馈QQ群：308170329</string>
+
+    <!--我的钱包-->
+    <string name="pocket_yue">账户余额</string>
+    <string name="pocket_yirongdai">易融贷可用余额</string>
+    <string name="yirongdai">易融贷</string>
+    <string name="pocket_jifen">积分</string>
+    <string name="pocket_hongbao">红包</string>
+    <string name="pocket_ticket">优惠券</string>
+
+</resources>

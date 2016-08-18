@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wythe.mall.view.PerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/personal_bg_color_silver">
+
+    <ScrollView
+        android:id="@+id/personal_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 用户信息 -->
+
+            <LinearLayout
+                android:id="@+id/personal_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/personal_info_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/personal_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp">
+
+                    <RelativeLayout
+                        android:id="@+id/personal_for_login_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <!--<com.jingdong.common.ui.JDCircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                            <!--android:id="@+id/user_img_view"-->
+                            <!--android:layout_width="@dimen/personal_user_img_view_width"-->
+                            <!--android:layout_height="@dimen/personal_user_img_view_height"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_marginLeft="@dimen/personal_user_photo_marginleft"-->
+                            <!--android:scaleType="centerCrop"-->
+                            <!--android:src="@drawable/personal_icon_default_avatar"-->
+                            <!--app:borderColor="@color/personal_avatar_border"-->
+                            <!--app:borderWidth="2.5dp" />-->
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/user_img_view"
+                            android:layout_width="@dimen/personal_user_img_view_width"
+                            android:layout_height="@dimen/personal_user_img_view_height"
+                            android:src="@drawable/personal_icon_default_avatar"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/personal_user_photo_marginleft"
+                            android:scaleType="centerCrop"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/user_img_view"
+                            android:orientation="vertical"
+                            android:paddingBottom="4dp">
+
+                            <TextView
+                                android:id="@+id/who_and_say_hello"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:lineSpacingMultiplier="1.1"
+                                android:singleLine="true"
+                                android:textColor="@color/personal_info_text"
+                                android:textSize="@dimen/personal_info_text_size_l" />
+
+                            <TextView
+                                android:id="@+id/user_level"
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:ellipsize="end"
+                                android:lineSpacingMultiplier="1.1"
+                                android:singleLine="true"
+                                android:textColor="@color/personal_info_text"
+                                android:textSize="@dimen/personal_info_text_size_m" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="23dp">
+                            <ImageView
+                                android:id="@+id/more_setting"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/common_title_setting_selector"
+                                android:layout_marginRight="10dp"/>
+
+                            <ImageView
+                                android:id="@+id/messages"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/title_left_button"
+                                android:background="@drawable/common_title_message_selector">
+                            </ImageView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/personal_info_more_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="47dp"
+                            android:layout_marginRight="17dp">
+
+                            <TextView
+                                android:id="@+id/personal_info_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="@string/account_manager"
+                                android:textColor="#d2d0d0"
+                                android:textSize="@dimen/personal_info_text_size_mm"
+                                android:layout_marginRight="2dp" />
+
+                            <ImageView
+                                android:id="@+id/personal_info_more_new_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/mall_red_point"
+                                android:visibility="gone"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="-1dp"
+                                android:src="@drawable/personal_icon_account_manager_arrow" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <!-- 未登录页面 -->
+
+                    <RelativeLayout
+                        android:id="@+id/personal_for_not_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/personal_click_for_login"
+                            android:layout_width="@dimen/personal_user_img_view_width"
+                            android:layout_height="@dimen/personal_user_img_view_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/personal_avatar_unlogin_selector"
+                            android:scaleType="centerCrop"
+                            android:visibility="visible"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- 我的订单 -->
+            <LinearLayout
+                android:id="@+id/personal_order_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/personal_item_margin"
+                android:layout_marginBottom="@dimen/personal_item_margin"
+                android:background="@color/personal_view_normal"
+                android:orientation="vertical">
+
+
+                <com.wythe.mall.view.PersonalItemTitle xmlns:title="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/personal_order_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    title:personalMessage="@string/personal_order_msg"
+                    title:personalTitle="@string/personal_order"
+                    title:personalTitleIcon="@drawable/personal_icon_order"
+                    title:personalTopLineVisible="true"
+                    title:personalBottomVisible="true" />
+
+                <LinearLayout
+                    android:id="@+id/personal_order_child_continer"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/personal_view_normal"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/personal_root_margin"
+                    android:paddingRight="@dimen/personal_root_margin">
+
+                    <com.wythe.mall.view.PersonalOrderItem xmlns:order="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/personal_order_item_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        order:order_icon="@drawable/personal_icon_wait_for_payment"
+                        order:order_name="@string/personal_order_wait_for_pay" />
+
+                    <com.wythe.mall.view.PersonalOrderItem xmlns:order="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/personal_order_item_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        order:order_icon="@drawable/personal_icon_wait_sign_in"
+                        order:order_name="@string/personal_order_wait_sing_in" />
+
+                    <com.wythe.mall.view.PersonalOrderItem xmlns:order="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/personal_order_item_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        order:order_icon="@drawable/personal_icon_waiting_comment"
+                        order:order_name="@string/personal_order_wait_comment" />
+
+                    <com.wythe.mall.view.PersonalOrderItem xmlns:order="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/personal_order_item_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        order:order_icon="@drawable/personal_icon_order_after_sale"
+                        order:order_name="@string/personal_order_after_sale" />
+
+                </LinearLayout>
+
+                <View style="@style/line2" />
+
+            </LinearLayout>
+
+            <!-- 我的钱包 -->
+            <LinearLayout
+                android:id="@+id/personal_pocket_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/personal_view_normal"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/personal_item_margin">
+
+                <com.wythe.mall.view.PersonalItemTitle xmlns:title="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/personal_pocket_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    title:personalMessage="@string/personal_pocket_msg"
+                    title:personalTitle="@string/personal_pocket"
+                    title:personalTitleIcon="@drawable/personal_icon_pocket"
+                    title:personalTopLineVisible="true"
+                    title:personalBottomVisible="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/personal_view_normal"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/personal_root_margin"
+                    android:paddingRight="@dimen/personal_root_margin">
+
+                    <com.wythe.mall.view.PersonalPocketItem xmlns:pocket="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/personal_pocket_item_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        pocket:pocket_name="@string/personal_pocket_balance"
+                        pocket:pocket_value="@string/personal_pocket_default_value" />
+
+                    <com.wythe.mall.view.PersonalPocketItem xmlns:pocket="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/personal_pocket_item_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        pocket:pocket_name="@string/personal_pocket_coupons"
+                        pocket:pocket_value="@string/personal_pocket_default_value" />
+
+                    <com.wythe.mall.view.PersonalPocketItem xmlns:pocket="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/personal_pocket_item_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        pocket:pocket_name="@string/personal_pocket_yirongdai"
+                        pocket:pocket_value="@string/personal_pocket_default_value" />
+
+                    <com.wythe.mall.view.PersonalPocketItem xmlns:pocket="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/personal_pocket_item_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        pocket:pocket_name="@string/personal_pocket_score"
+                        pocket:pocket_value="@string/personal_pocket_default_value" />
+
+                </LinearLayout>
+
+                <View style="@style/line2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="25dp"
+                    android:id="@+id/personal_guanzhu">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/personal_guanzhu"
+                        android:scaleType="fitCenter"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的关注"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider_color"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/personal_zuji">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/personal_zuji"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的足迹"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider_color"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/personal_hongbao">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/personal_hongbao"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="红包"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider_color"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/personal_feedback">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/personal_feedback"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务反馈"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 猜你喜欢 -->
+            <LinearLayout android:id="@+id/personal_recommend_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <com.wythe.mall.view.PersonalItemTitle
+                    xmlns:title="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/personal_view_pressed_selector"
+                    title:personalTitleIcon="@drawable/personal_icon_recommend"
+                    title:personalTitle="@string/personal_recommend"
+                    title:personalArrowVisible="false"
+                    title:personalTopLineVisible="true" />
+
+                <com.wythe.mall.view.LoopViewPager
+                    android:id="@+id/personal_recommend_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cart_recommend_viewpager_height"
+                    android:minHeight="144dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp">
+                    <com.wythe.mall.view.LinePageIndicator
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/personal_recommend_indicator"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        app:strokeWidth="1.5dp"
+                        app:lineWidth="12dp"
+                        app:gapWidth="2dp"
+                        app:unselectedColor="#bfbfbf"
+                        app:selectedColor="#f15353" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/promotion_iv"
+        android:layout_width="@dimen/promotion_width"
+        android:layout_height="@dimen/promotion_height"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/personal_kf"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:background="@drawable/ic_personal_kf"
+        android:visibility="gone" />
+
+</com.wythe.mall.view.PerLayout>

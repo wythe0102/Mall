@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/divider_color"
+    tools:context="com.wythe.mall.activity.RedPacketActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/title_left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/left_arrow"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"/>
+
+        <com.wythe.mall.view.Indicator
+            android:id="@+id/indicator"
+            app:indicatorColor="@color/red"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@color/white"
+            android:layout_width="180dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_info_tab"
+                android:text="商品"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/product_detail_tab"
+                android:text="详情"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/product_comment_tab"
+                android:text="评价"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+        </com.wythe.mall.view.Indicator>
+
+        <TextView
+            android:id="@+id/title_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_right_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

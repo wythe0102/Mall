@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_expandablegridview_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="5dip"
+        android:background="@drawable/text_item_bg"
+        android:gravity="center"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</LinearLayout>

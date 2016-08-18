@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="personal_bg_color_silver">#f3f4f6</color>
+
+    <color name="personal_color_gray">#cecfd0</color>
+
+
+    <color name="personal_info_bg">#6A505D</color>
+    <color name="personal_avatar_border">#4dffffff</color>
+    <color name="personal_info_text">#fffefe</color>
+
+    <color name="personal_color_title">#252525</color>
+    <color name="personal_color_more">#bcbdbf</color>
+    <color name="personal_color_item">#686868</color>
+
+    <color name="personal_color_pocket_value">#515354</color>
+
+    <color name="personal_view_normal">#ffffff</color>
+    <color name="personal_view_pressed">#f1f1f1</color>
+
+    <color name="personal_view_value">#f8f6f6</color>
+
+    <color name="personal_hint_color">#bfbfbf</color>
+
+    <!--<color name="personal_dna_red">#cb2a49</color>
+    <color name="personal_dna_blue">#126ed5</color>-->
+
+</resources>

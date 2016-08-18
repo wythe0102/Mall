@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/divider_color"
+    tools:context="com.wythe.mall.activity.RedPacketActivity">
+
+    <!-- 界面Title -->
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/title_normal" />
+
+    <com.wythe.mall.view.Indicator
+        android:id="@+id/indicator"
+        app:indicatorColor="@color/red"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:weightSum="3"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/not_used_tab"
+            android:text="未使用"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/out_date_tab"
+            android:text="已过期"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/used_tab"
+            android:text="已使用"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+    </com.wythe.mall.view.Indicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

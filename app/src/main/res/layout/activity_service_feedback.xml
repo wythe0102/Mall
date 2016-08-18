@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regist_bg">
+
+    <!-- 界面Title -->
+
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/title_normal" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/common_title" >
+
+            <LinearLayout
+                android:id="@+id/get_find_password_number_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/service_online"
+                    android:padding="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="49dp"
+                    android:orientation="vertical"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/feedback_online"/>
+
+
+                    <TextView
+                        style="@style/more_native_setting_title_style"
+                        android:layout_marginLeft="@dimen/service_feedback_margin_left"
+                        android:text="易配在线客服"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/right_arrow"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/service_feedback_divider_margin_left"
+                    android:background="@color/divider_color2"/>
+
+                <RelativeLayout
+                    android:id="@+id/service_phone"
+                    android:padding="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="49dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/feedback_phone"/>
+
+                    <TextView
+                        style="@style/more_native_setting_title_style"
+                        android:layout_marginLeft="@dimen/service_feedback_margin_left"
+                        android:text="易配电话客服"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:text="400-8877-190"
+                        android:textSize="20dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/service_feedback_divider_margin_left"
+                    android:background="@color/divider_color2"/>
+
+                <RelativeLayout
+                    android:id="@+id/service_feedback"
+                    android:padding="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="49dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/feedback_suggestion"/>
+
+                    <TextView
+                        android:id="@+id/more_jd_about_title"
+                        style="@style/more_native_setting_title_style"
+                        android:layout_marginLeft="@dimen/service_feedback_margin_left"
+                        android:text="意见反馈"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/right_arrow"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/service_feedback_divider_margin_left"
+                    android:background="@color/divider_color2"/>
+
+            </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

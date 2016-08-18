@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/personal_order_item_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView android:id="@+id/personal_order_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_below="@id/personal_order_item_icon"
+        android:layout_marginTop="4dp"
+        android:textSize="@dimen/personal_item_text_size"
+        android:textColor="@color/personal_color_item"/>
+
+    <TextView android:id="@+id/personal_order_item_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/personal_order_item_icon"
+        android:layout_alignTop="@id/personal_order_item_icon"
+        android:layout_marginLeft="-8dp"
+        android:layout_marginTop="-6dp"
+        android:textSize="@dimen/personal_order_notify_size"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:background="@drawable/personal_icon_order_notify_bg"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:visibility="gone"/>
+
+</RelativeLayout>

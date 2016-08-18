@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_color">
+    <!-- 界面Title -->
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/title_normal" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/message_center">
+
+    </ListView>
+
+</LinearLayout>

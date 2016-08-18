@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/divider_color">
+    <!-- 界面Title -->
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/title_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/pocket_yirongdai"
+        android:background="@drawable/pocket_yirongdai">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/pocket_yirongdai_icon"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="可贷款金额 (元)"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10000.00"
+                android:textColor="@color/white"
+                android:textSize="50dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/divider_color"/>
+
+    <RelativeLayout
+        android:id="@+id/yirongdai_more_information"
+        style="@style/more_native_setting_layout_style"
+        android:clickable="true"
+        >
+
+        <TextView
+            android:id="@+id/more_jd_about_title"
+            style="@style/more_native_setting_title_style"
+            android:text="@string/more_information"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/right_arrow"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/divider_color"/>
+    <RelativeLayout
+        android:id="@+id/yirongdai_add_amount"
+        style="@style/more_native_setting_layout_style"
+        android:clickable="true"
+        >
+
+        <TextView
+            style="@style/more_native_setting_title_style"
+            android:text="@string/add_amount"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/right_arrow"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

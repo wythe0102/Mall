@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3.5dp">
+
+        <TextView
+            android:id="@+id/personal_pocket_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/personal_color_pocket_value"
+            android:textSize="@dimen/personal_title_text_size" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/personal_pocket_red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/personal_pocket_value"
+            android:layout_alignTop="@id/personal_pocket_value"
+            android:layout_marginLeft="-2dp"
+            android:paddingBottom="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mall_red_point"
+            android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/personal_pocket_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/personal_color_item"
+            android:textSize="@dimen/personal_text_size_11" />
+    </LinearLayout>

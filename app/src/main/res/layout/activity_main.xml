@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    >
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:layout_above="@+id/radio_button_group"
+            android:background="#77557799"
+            />
+
+        <RadioGroup
+            android:id="@+id/radio_button_group"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/navigation_tab_home"
+                style="@style/navigation_tab_bottom"
+                android:checked="true"
+                android:drawableTop="@drawable/navigation_tab_home_selector"/>
+
+            <RadioButton
+                android:id="@+id/navigation_tab_category"
+                style="@style/navigation_tab_bottom"
+                android:drawableTop="@drawable/navigation_tab_category_selector"/>
+
+            <RadioButton
+                android:id="@+id/navigation_tab_share"
+                style="@style/navigation_tab_bottom"
+                android:drawableTop="@drawable/navigation_tab_share_selector"/>
+
+            <RadioButton
+                android:id="@+id/navigation_tab_cart"
+                style="@style/navigation_tab_bottom"
+                android:drawableTop="@drawable/navigation_tab_cart_selector"/>
+
+            <RadioButton
+                android:id="@+id/navigation_tab_personal"
+                style="@style/navigation_tab_bottom"
+                android:drawableTop="@drawable/navigation_tab_personal_selector" />
+        </RadioGroup>
+</LinearLayout>

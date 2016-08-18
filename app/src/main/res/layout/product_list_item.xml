@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="120dp" android:background="@color/white"
+    android:paddingLeft="10dp" android:paddingRight="10dp"
+    android:paddingTop="10dp" android:paddingBottom="10dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_image"
+        android:src="@drawable/home_shanpin003"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_title"
+            android:textColor="@color/black"
+            android:text="离合器压盘总成 铁流德萨离合器压盘总成(380)杠杆"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:id="@+id/list_item_price"
+            android:layout_above="@+id/list_item_info_container"
+            android:text="¥988"
+            android:textSize="25dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_info_container"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/product_xiangou"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/list_item_info"
+                android:layout_height="wrap_content"
+                android:text="购买1-199件时享受优惠"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

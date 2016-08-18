@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:background="@drawable/personal_view_pressed_selector">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/personal_item_icon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/personal_root_margin"/>
+
+    <TextView android:id="@+id/personal_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/personal_item_icon"
+        android:layout_marginLeft="@dimen/personal_root_margin"
+        android:textSize="@dimen/personal_title_text_size"
+        android:textColor="@color/personal_color_title"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/personal_item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/none"
+        android:layout_marginRight="@dimen/personal_root_margin"
+        android:src="@drawable/personal_icon_arrow"/>
+
+    <TextView android:id="@+id/personal_item_more_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/personal_item_arrow"
+        android:layout_marginRight="2dp"
+        android:textColor="@color/personal_color_more" />
+
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/personal_item_new_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@id/personal_item_arrow"
+        android:scaleType="centerInside"
+        android:src="@drawable/mall_red_point"
+        android:visibility="gone"/>
+
+    <View android:id="@+id/personal_item_top_line"
+        android:layout_alignParentTop="true"
+        style="@style/line2" />
+    <View android:id="@+id/personal_item_bottom_line"
+        android:layout_alignParentBottom="true"
+        style="@style/line2" />
+
+
+</RelativeLayout>
+
+
+
+

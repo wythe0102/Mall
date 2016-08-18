@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regist_bg">
+
+    <!-- 界面Title -->
+
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/title_normal" />
+
+
+    <ScrollView
+        android:id="@+id/quick_register_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/common_title" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/get_register_number_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/register_number_editText_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginRight="25dip"
+                    android:layout_marginLeft="25dip"
+                    android:background="@drawable/edit_text_x"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+                    <com.wythe.mall.view.MyEditText
+                        android:id="@+id/register_number_editText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/regist_inputPhone"
+                        android:textColorHint="@color/regist_msgCode_hint"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:paddingLeft="@dimen/regist_inputEdite_padding"
+                        android:digits="1234567890."
+                        android:drawableRight="@drawable/delete"
+                        android:paddingRight="11dp"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/register_agreement_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register_number_editText_rl"
+                    android:layout_marginTop="16dip"
+                    android:layout_marginRight="25dip"
+                    android:layout_marginLeft="25dip">
+                    <ImageButton
+                        android:id="@+id/register_agreement_checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:background="@drawable/button_i_01"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        >
+                    </ImageButton>
+                    <TextView
+                        android:id="@+id/register_show_agreement0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/register_agreement_checkBox"
+                        android:text="@string/regist_accept_agreement"
+                        android:textSize="14dp"
+                        android:textColor="@color/regist_tip2"
+                        android:paddingLeft="@dimen/regist_check"
+                        android:layout_centerVertical="true"
+                        android:gravity="left">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/register_show_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/register_show_agreement0"
+                        android:text="@string/show_jdagreement"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/regist_input"
+                        android:layout_centerVertical="true"
+                        android:gravity="left">
+                    </TextView>
+                    <!-- 注册按钮 -->
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/register_agreement_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="25dip"
+                    android:layout_marginLeft="25dip"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_b"
+                    android:text="@string/regist_next"
+                    android:gravity="center"
+                    android:textColor="@color/regist_btn0"
+                    android:textSize="16sp" >
+                </Button>
+
+                <RelativeLayout
+                    android:id="@+id/quick_register_to_register_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register_button"
+                    android:layout_marginTop="16dip"
+                    android:layout_marginRight="25dip"
+                    android:layout_marginLeft="25dip">
+
+                    <TextView
+                        android:id="@+id/quick_register_to_register_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="遇到问题? 您可以"
+                        android:textSize="14sp"
+                        android:textColor="@color/regist_tip2"/>
+
+                    <TextView
+                        android:id="@+id/quick_register_goseeagreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/quick_register_to_register_text"
+                        android:text="@string/regist_lianxi"
+                        android:linksClickable="true"
+                        android:textColor="@color/regist_tip"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
